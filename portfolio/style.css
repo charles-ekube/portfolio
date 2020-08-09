@@ -1,0 +1,397 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Philosopher', sans-serif;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Philosopher', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+}
+
+nav ul {
+    background-color: #000;
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    padding: 15px;
+    box-shadow: 0 16px 24px 2px rgba(228, 227, 227, 0.14),
+    0 6px 30px 5px rgba(0, 0, 0, 0.12),
+    0 8px 10px -7px rgba(0, 0, 0, 0.2);
+
+}
+
+nav ul li a {
+    flex: 1 1 200px;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    border-bottom: 1px solid #fff;
+}
+
+/* main-container */
+main {
+    width: 70%;
+    margin: auto;
+    position: relative;
+    top: 48px;
+}
+
+/* intro-section */
+
+.intro-section {
+    background-image: url("img/mac.png");
+    height: 610px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.intro-section article {
+    font-size: 1.1rem;
+    color: #fff;
+
+    padding: 10px;
+}
+
+/* skills-section */
+
+.skills-section {
+    margin: 100px auto;
+}
+
+.skills-section h1 {
+    padding: 20px;
+    font-size: 2.2em;
+    text-align: center;
+
+}
+
+.skills-section ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-section ul li {
+    text-align: center;
+    box-shadow: 3px 0 15px -1px rgba(0, 0, 0, 0.15);
+    margin: 10px 5px;
+    border-radius: 10px;
+
+}
+
+.skills-section ul li img {
+    width: 150px;
+    height: 200px;
+    padding: 30px;
+}
+
+/*what-i-do-section*/
+.what-i-do-section .container {
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    grid-gap: 10px;
+}
+
+.what-i-do-section h1 {
+    text-align: center;
+    font-size: 2.2em;
+    padding: 20px;
+}
+
+.what-i-do-section article {
+    background-color: #ffffff;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 3px 0 15px -1px rgba(0, 0, 0, 0.15);
+    position: relative;
+    z-index: 1;
+    margin-top: 50px;
+}
+
+.what-i-do-section article .icon {
+    height: 76px;
+    width: 76px;
+    background-color: #000000;
+    display: inline-block;
+    text-align: center;
+    line-height: 76px;
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 30px;
+    position: absolute;
+    top: -38px;
+    left: 50%;
+    margin-left: -38px;
+}
+
+.what-i-do-section article h4 {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 500;
+    padding: 20px 0;
+}
+
+.what-i-do-section article p {
+    font-size: 1.2em;
+    text-align: center;
+
+}
+
+/* projects-section */
+
+.projects {
+    margin: 100px 0;
+}
+
+.projects h1 {
+    font-size: 2.2em;
+    padding: 20px;
+    text-align: center;
+}
+
+.projects div {
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 3px 0 15px -1px rgba(0, 0, 0, 0.15);
+}
+
+.projects article {
+    padding: 70px 0;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.projects article img {
+    width: 100%;
+    max-height: 50vh;
+}
+
+.projects article p {
+    font-size: 1.1em;
+    padding: 30px 15px;
+}
+
+.projects article ul {
+    width: 50%;
+    margin: 10px 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.projects article ul li a {
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    text-decoration: none;
+    color: #0099cc;
+}
+
+/* contact-section */
+
+.contact-section h1 {
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-section p {
+    font-size: 1.1em;
+    padding: 20px;
+}
+
+.contact-section ul {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.contact-section ul li {
+    background-color: #b8b894;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.contact-section ul li a {
+    text-decoration: none;
+    color: #0099cc;
+}
+
+/*footer*/
+.footer {
+    padding: 10px;
+    background-color: #b8b894;
+    text-align: center;
+}
+
+/* mediaqueries */
+
+/* mobile version */
+@media only screen and (max-width: 797px) {
+    nav ul {
+        z-index: 1;
+        flex: 1 1 20%;
+        position: fixed;
+        width: 100%;
+        transition: ease-in-out all 0.7s;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    .intro-section {
+        background-image: url("img/mac.png");
+        height: 90vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .intro-section article {
+        font-size: 1.2em;
+        padding: 10px;
+        margin: 0;
+    }
+
+    .skills-section {
+        padding: 0 20px;
+    }
+
+    .skills-section ul {
+        grid-template-columns: 50% 50%;
+        justify-content: center;
+    }
+
+    .skills-section ul li img {
+        width: 150px;
+        height: 200px;
+    }
+
+    .what-i-do-section .container {
+        grid-template-columns: 100%;
+        padding: 0 30px;
+        margin: 10px 0;
+    }
+
+    .projects {
+        padding: 0 20px;
+    }
+
+    .projects article {
+        grid-template-columns: 100%;
+    }
+
+    .projects article img {
+        width: 100%;
+    }
+
+    .projects article ul {
+        width: 73%;
+        margin: 10px 0;
+    }
+}
+
+/* Tablet version */
+@media only screen and (min-width: 798px) and (max-width: 901px) {
+    nav ul {
+        z-index: 1;
+        position: fixed;
+        width: 70%;
+        transition: ease-in-out all 0.7s;
+    }
+
+    main {
+        width: 70%;
+        margin: auto;
+        position: relative;
+        top: 10px;
+    }
+
+    .intro-section {
+        background-image: url("img/mac.png");
+        height: 600px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .intro-section article {
+        font-size: 1.2em;
+        padding: 10px;
+
+    }
+
+    .skills-section ul {
+        grid-template-columns: 33% 33% 33%;
+        justify-content: center;
+    }
+
+    .skills-section ul li img {
+        width: 150px;
+        height: 200px;
+    }
+
+    .what-i-do-section .container {
+        grid-template-columns: 100%;
+        padding: 0 50px;
+        margin: 10px 0;
+    }
+
+    .projects article {
+        grid-template-columns: 100%;
+    }
+
+    .projects article img {
+        width: 100%;
+    }
+
+    .projects article ul {
+        width: 50%;
+        margin: 10px 0;
+    }
+}
+
+@media only screen and (min-width: 902px) and (max-width: 1250px) {
+
+    .what-i-do-section .container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding: 0 30px;
+        margin: 10px 0;
+    }
+}
